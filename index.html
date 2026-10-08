@@ -1,0 +1,16 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f3f7ff"><title>Aniimopédia</title><link rel="stylesheet" href="styles.css"></head><body>
+<div class="app-shell">
+<header class="topbar"><div class="brand"><span class="brand-mark">A</span><div><div class="eyebrow">ANIIMO</div><h1>Aniimopédia</h1></div></div><button id="settingsBtn" class="icon-btn" aria-label="Paramètres">⚙</button></header>
+<main>
+<section class="hero"><div><div class="section-kicker">MON ANIILOG</div><h2>Collection</h2><p>Explore les Aniimo d’Idylle et complète ton registre.</p></div><div class="progress-orb"><strong id="pct">99%</strong><span>complété</span></div></section>
+<section class="progress-card"><div class="progress-head"><div><span class="mini-label">ANIIMO CAPTURÉS</span><strong><span id="captured">81</span> <i>/</i> <span id="total">82</span></strong></div><div class="remaining"><span id="remaining">1</span> restant</div></div><div class="bar"><span id="barFill"></span></div></section>
+<section class="tools"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Rechercher un Aniimo…" autocomplete="off"></label><button id="filterBtn" class="filter-btn"><span>☷</span> Filtres</button></section>
+<section id="filters" class="filters hidden"><button class="chip active" data-filter="all">Tous</button><button class="chip" data-filter="captured">Capturés</button><button class="chip" data-filter="missing">Non capturés</button><button class="chip" data-filter="favorites">Favoris</button></section>
+<div class="subhead"><div><span id="resultCount">82</span> Aniimo</div><button id="sortBtn" class="sort">N° croissant⌄</button></div>
+<section id="grid" class="grid"></section>
+</main>
+<nav class="bottom-nav"><button class="nav-item active"><span>◈</span><small>Aniimopédia</small></button><button class="nav-item" id="collectionNav"><span>◇</span><small>Collection</small></button><button class="nav-item" id="favoritesNav"><span>☆</span><small>Favoris</small></button></nav>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-backdrop" data-close></div><article class="sheet"><button class="close" data-close>×</button><div id="modalContent"></div></article></div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script></body></html>
